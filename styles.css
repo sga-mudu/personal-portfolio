@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mako&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+
+:root {
+    --white: #ffffff;
+    --black: #1d1616;
+    --gray: #d9d9d9;
+    --dark-blue: #073b4c;
+    --blue: #1188b0;
+    --light-blue: #e6ebed;
+    --gray-blue: #839da5;
+    --background: #f5f0ef;
+    --background-2: #efe7e6;
+    --red: #ef476f;
+    --yellow: #ffd166;
+    --green: #06d6a0;
+
+    --title-font: "Montserrat";
+    --subtitle-font: "Mako";
+    --text-font: "Roboto Slab";
+
+    --font-size-xxl: 78.54px;
+    --font-size-xl: 58.92px;
+    --font-size-lg: 44.2px;
+    --font-size-m: 33.16px;
+    --font-size-s: 24.88px;
+    --font-size-xs: 18.66px;
+    --font-size-xxs: 14px;
+
+    --shadow: 0px 8px 18px -6px rgba(24, 39, 75, 0.12),
+        0px 12px 42px -4px rgba(24, 39, 75, 0.12);
+    --light-shadow: 0px 4px 6px -4px rgb(24, 39, 75, 0.12),
+        0px 8px 8px -4px rgba(24, 39, 75, 0.08);
+
+    --blob: url(../images/doodles/blob.png) no-repeat center / cover;
+    --double-line: url(../images/doodles/double-line.png) no-repeat
+        center/contain;
+    --wavy-line: url(../images/doodles/wavy-line.png) no-repeat center/contain;
+    --circle: url(../images/doodles/circle.png) no-repeat center/contain;
+    --squiggly-line: url(../images/doodles/squiggly-line.png) no-repeat
+        center/contain;
+    --highlight: url(../images/doodles/highlight.png) no-repeat center/contain;
+}
