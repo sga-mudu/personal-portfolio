@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mako&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+@import url(./css/home.css);
 
 :root {
     --white: #ffffff;
@@ -42,3 +43,133 @@
         center/contain;
     --highlight: url(../images/doodles/highlight.png) no-repeat center/contain;
 }
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 20px 40px;
+    background-color: var(--white);
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 44px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+h1{
+    position: relative;
+    font-family: var(--title-font);
+    font-size: var(--font-size-m);
+    color: var(--black);
+    text-transform: capitalize;
+    text-align: center;
+    width: max-content;
+    z-index: 1;
+}
+
+h4{
+    font-family: var(--subtitle-font);
+    font-size: var(--font-size-xs);
+    font-weight: 400;
+    color: var(--black);
+}
+a{
+    text-decoration: none;
+}
+
+.buttons-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.buttons-container a{
+    all: unset;
+    width: 100%;
+    height: 44px;
+    background-color: var(--dark-blue);
+    font-family: var(--title-font);
+    font-size: var(--font-size-xxs);
+    font-weight: 600;
+    text-align: center;
+    color: var(--white);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-shadow: none;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.buttons-container a:hover{
+    background-color: var(--red);
+    box-shadow: var(--light-shadow);
+    transform: translateY(-2px);
+}
+
+
+@media (min-width: 768px) {
+    h1{
+        font-size: var(--font-size-lg);
+    }
+}
+
+@media (min-width: 1200px){
+    section{
+        padding: 56px 72px;
+    }
+
+    h1{
+        font-size: var(--font-size-xxl);
+    }
+    h4{
+        font-size: var(--font-size-s);
+    }
+    .buttons-container{
+        flex-direction: row;
+    }
+    .buttons-container a{
+        width: 300px;
+        height: 50px;
+        font-size: var(--font-size-xs);
+    }
+}
+
+
+
+
+
+
+
+
