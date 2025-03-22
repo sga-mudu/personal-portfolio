@@ -1,0 +1,210 @@
+
+#about-me .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#about-me .images-container{
+    position: relative;
+    width: 300px;
+    height: 250px;
+}
+#about-me .images-container .image:nth-child(1){
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+}
+#about-me .images-container .image:nth-child(1) img{
+    position: relative;
+    width: 93px;
+    height: 93px;
+    border-radius: 32px;
+    object-fit: cover;
+}
+
+#about-me .images-container .image:nth-child(1)::before{
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: -15px;
+    width: 20px;
+    height: 23px;
+    background: var(--highlight);
+    transform: scaleY(-1);
+}
+
+#about-me .images-container .image:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+#about-me .images-container .image:nth-child(2) img{
+    width: 110px;
+    height: 110px;
+    border-radius: 36px;
+    object-fit: cover;
+}
+#about-me .images-container .image:nth-child(2)::before{
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 20px;
+    height: 23px;
+    background: var(--highlight);
+}
+
+#about-me .images-container .image:nth-child(3){
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+#about-me .images-container .image:nth-child(3) img{
+    width: 146px;
+    height: 146px;
+    border-radius: 40px;
+    object-fit: cover;
+}
+#about-me .images-container .image:nth-child(3)::before{
+    content: '';
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 20px;
+    height: 23px;
+    background: var(--highlight);
+    transform: scaleX(-1);
+}
+#about-me .images-container .image:nth-child(3)::after{
+    content: '';
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 125px;
+    height: 55px;
+    background: var(--squiggly-line);
+}
+
+#about-me .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
+}
+#about-me .content h2::before{
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    right: -35px;
+    width: 160px;
+    height: 12px;
+    z-index: -1;
+    background: var(--double-line);
+}
+
+#about-me .content{
+    min-width: 360px;
+}
+
+@media (min-width: 768px) {
+    #about-me .container {
+        flex-direction: row;
+        gap: 52px;
+    }
+
+    #about-me .content {
+        width: min-content;
+    }
+
+    #about-me .buttons-container {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1200px) {
+    #about-me .container {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #about-me .images-container {
+        height: calc(250px * 2);
+        width: calc(300px * 2);
+    }
+
+    #about-me .images-container .image:nth-child(1) {
+        bottom: calc(25px * 2);
+        left: calc(25px * 2);
+    }
+
+    #about-me .images-container .image:nth-child(1) img {
+        width: calc(93px * 2);
+        height: calc(93px * 2);
+        border-radius: 32px;
+    }
+
+    #about-me .images-container .image:nth-child(1)::before {
+        bottom: calc(-15px * 2);
+        left: calc(-15px * 2);
+        width: calc(20px * 2);
+        height: calc(23px * 2);
+    }
+
+    #about-me .images-container .image:nth-child(2) {
+        top: 0;
+        left: calc(10px * 2);
+    }
+
+    #about-me .images-container .image:nth-child(2) img {
+        width: calc(110px * 2);
+        height: calc(110px * 2);
+        border-radius: 36px;
+    }
+
+    #about-me .images-container .image:nth-child(2)::before {
+        top: calc(-15px * 2);
+        left: calc(-15px * 2);
+        width: calc(20px * 2);
+        height: calc(23px * 2);
+    }
+
+    #about-me .images-container .image:nth-child(3) {
+        top: calc(10px * 2);
+        right: calc(15px * 2);
+    }
+
+    #about-me .images-container .image:nth-child(3) img {
+        width: calc(146px * 2);
+        height: calc(146px * 2);
+        border-radius: 40px;
+        object-fit: cover;
+    }
+
+    #about-me .images-container .image:nth-child(3)::before {
+        top: calc(-15px * 2);
+        right: calc(-15px * 2);
+        width: calc(20px * 2);
+        height: calc(23px * 2);
+    }
+
+    #about-me .images-container .image:nth-child(3)::after {
+        bottom: calc(-70px * 2);
+        width: calc(125px * 2);
+        height: calc(55px * 2);
+    }
+
+    #about-me .content {
+        gap: 48px;
+    }
+
+    #about-me .content h2::before {
+        bottom: -25px;
+        right: -20px;
+        width: calc(193px * 1.75);
+        height: calc(18px * 1.75);
+    }
+}

@@ -1,0 +1,190 @@
+:root {
+    --red: #ef476f;
+    --gray-blue: #839da5;
+    --dark-blue: #073b4c;
+    --background: #f5f0ef;
+
+    --wavy-line: url(../images/doodles/wavy-line.png) no-repeat center/contain;
+}
+
+#contact-me{
+    background-color: var(--background);
+}
+
+#contact-me .background-wave{
+    position: absolute;
+    bottom: -50%;
+    left: -10%;
+    height: 100%;
+    z-index: -1;
+    transform: rotate(90deg);
+}
+
+#contact-me h2{
+    width: auto;
+}
+
+#contact-me h2::before{
+    content: '';
+    background: var(--wavy-line);
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 14px;
+}
+
+#contact-me .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+}
+#contact-me .content form, 
+#contact-me .content form div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+#contact-me .content form input,
+#contact-me .content form textarea{
+    all: unset;
+    padding: 12px 20px;
+    width: calc(100% - 40px);
+    border-radius: 8px;
+    background-color: white;
+    border: 2px solid var(--dark-blue);
+}
+
+#contact-me .content form textarea{
+    min-height: 200px;
+}
+
+#contact-me .content .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+}
+
+#contact-me .content .info .socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#contact-me .content .info .socials a{
+    background-color: var(--dark-blue);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease all;
+}
+#contact-me .content .info .socials a:hover{
+    background-color: var(--red);
+    transform: scale(1.1);
+}
+
+#contact-me .content .info .socials a img{
+    width: 21px;
+    height: 21px;
+}
+
+@media (min-width: 768px) {
+    #contact-me .background-wave {
+        bottom: 0;
+        right: -10%;
+        left: unset;
+        height: 100%;
+        transform: rotate(0);
+    }
+
+    #contact-me h2::before {
+        right: -25px;
+        left: unset;
+        transform: unset;
+    }
+
+    #contact-me .content {
+        flex-direction: row;
+        gap: 48px;
+        width: 100%;
+    }
+
+    #contact-me .content form {
+        width: max-content;
+        flex: 1;
+    }
+
+    #contact-me .content form div {
+        width: 100%;
+    }
+
+    #contact-me .content form textarea {
+        min-height: 150px;
+    }
+
+    #contact-me .content .info {
+        align-self: flex-start;
+        width: 300px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #contact-me {
+        gap: 60px;
+    }
+
+    #contact-me .background-wave {
+        height: 120%;
+    }
+
+    #contact-me h2::before {
+        bottom: -20px;
+        right: -40px;
+        width: calc(200px * 1.75);
+        height: calc(14px * 1.75);
+    }
+
+    #contact-me .content {
+        justify-content: space-between;
+    }
+
+    #contact-me .content form {
+        max-width: 700px;
+    }
+
+    #contact-me .content form div {
+        flex-direction: row;
+    }
+
+    #contact-me .content .info {
+        width: 600px;
+        gap: 32px;
+    }
+
+    #contact-me .content .info .socials {
+        gap: 40px;
+    }
+
+    #contact-me .content .info .socials a {
+        width: calc(36px * 1.4);
+        height: calc(36px * 1.4);
+    }
+
+    #contact-me .content .info .socials a img {
+        width: calc(21px * 1.4);
+        height: calc(21px * 1.4);
+    }
+}

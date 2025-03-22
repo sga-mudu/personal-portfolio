@@ -1,0 +1,55 @@
+@media (min-width: 768px) {
+    #projects {
+        gap: 60px;
+    }
+
+    #projects .header {
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    #projects .projects-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #projects .project {
+        width: 326px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #projects .header {
+        width: calc(350px * 3 + 32px * 2);
+    }
+
+    #projects h2::before {
+        top: -20px;
+        width: calc(100px * 1.5);
+        height: calc(80px * 1.5);
+    }
+
+    #projects .filter-container {
+        gap: 24px;
+    }
+
+    #projects .filter-container span {
+        font-size: var(--font-size-xs);
+    }
+
+    #projects .filter-container select {
+        padding: 16px 24px;
+        font-size: var(--font-size-xs);
+        font-weight: 600;
+    }
+
+    #projects .project {
+        width: 350px;
+        height: 480px;
+    }
+
+    #projects .project .content .info p {
+        font-size: var(--font-size-xxs);
+    }
+}

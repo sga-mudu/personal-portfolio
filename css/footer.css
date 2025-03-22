@@ -1,0 +1,19 @@
+@media (min-width: 1200px) {
+    footer .links a {
+        font-size: var(--font-size-xs);
+    }
+
+    footer .socials {
+        gap: 40px;
+    }
+
+    footer .socials a {
+        height: 52px;
+        width: 52px;
+    }
+
+    footer .socials a img {
+        width: 32px;
+        height: 32px;
+    }
+}

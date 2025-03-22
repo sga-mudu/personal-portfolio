@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mako&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
-@import url(./css/home.css);
+@import url("./css/home.css");
+@import url("./css/about-me.css");
+@import url(./css/references.css);
+@import url(./css/contact-me.css);
 
 :root {
     --white: #ffffff;
@@ -82,7 +85,7 @@ section{
     z-index: 1;
 }
 
-h1{
+h1, h2{
     position: relative;
     font-family: var(--title-font);
     font-size: var(--font-size-m);
@@ -99,6 +102,13 @@ h4{
     font-weight: 400;
     color: var(--black);
 }
+
+p{
+    font-family: var(--text-font);
+    font-size: var(--font-size-xxs);
+    font-weight: 400;
+    color: var(--black);
+}
 a{
     text-decoration: none;
 }
@@ -112,6 +122,7 @@ a{
     width: 100%;
 }
 
+button,
 .buttons-container a{
     all: unset;
     width: 100%;
@@ -132,6 +143,7 @@ a{
     transition: 0.3s ease all;
 }
 
+button:hover,
 .buttons-container a:hover{
     background-color: var(--red);
     box-shadow: var(--light-shadow);
@@ -140,31 +152,52 @@ a{
 
 
 @media (min-width: 768px) {
-    h1{
+    h1 {
         font-size: var(--font-size-lg);
+    }
+
+    .logo .name {
+        font-size: var(--font-size-xs);
     }
 }
 
-@media (min-width: 1200px){
-    section{
+@media (min-width: 1200px) {
+    section {
         padding: 56px 72px;
     }
 
-    h1{
+    h1 {
         font-size: var(--font-size-xxl);
     }
-    h4{
+
+    h2 {
+        font-size: var(--font-size-xl);
+    }
+
+    h4 {
         font-size: var(--font-size-s);
     }
-    .buttons-container{
+
+    p {
+        font-size: var(--font-size-xs);
+    }
+
+    .buttons-container {
         flex-direction: row;
     }
-    .buttons-container a{
+
+    .buttons-container a,
+    button {
         width: 300px;
         height: 50px;
         font-size: var(--font-size-xs);
     }
+
+    .scroll-up {
+        right: 48px;
+    }
 }
+
 
 
 
