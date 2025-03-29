@@ -5,6 +5,7 @@
 @import url("./css/about-me.css");
 @import url(./css/references.css);
 @import url(./css/contact-me.css);
+@import url("./css/projects.css");
 
 :root {
     --white: #ffffff;
@@ -95,6 +96,13 @@ h1, h2{
     width: max-content;
     z-index: 1;
 }
+
+h3 {
+   font-family: var(--title-font);
+   font-size: var(--font-size-s);
+   color: var(--black);
+}
+
 
 h4{
     font-family: var(--subtitle-font);
